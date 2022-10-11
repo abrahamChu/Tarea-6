@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Ejemplo de HTML5" />
+    <meta name="keywords" content="HTML5, CSS3, JavaScript" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
+    <link rel="shortcut icon" href="./imagenes/Logo.png" />
+    <title>Traductor Español --> Chino</title>
+    <link rel="stylesheet" href="./css/plantilla.css" />
+    <script src="js/funciones.js" defer></script>
+    <!--El defer hace que el script del .js se carge lo último ya que no nos interesa que se carge antes.-->
+  </head>
+
+  <body>
+    <div id="contenedor">
+      <header id="cabecera">
+        <h1 id="titulo">Yo se escribir en CHINO con ñ y á acentuada</h1>
+      </header>
+
+      <nav id="nav">
+        <p><a href="https://www.google.com/">Cerrar Navegador</a></p>
+      </nav>
+
+      <section id="seccion">
+        <p style="color: aqua"><i>Escribir en CHINO</i></p>
+      </section>
+
+      <section id="seccion2">
+        <h1>Convertir de unos carácteres UNICODE a otros</h1>
+        <article>
+          <h3>Escribe:</h3>
+          <input type="text" id="dato" />
+          <article id="caja">
+            <!--Se mostraran los eventos que se vayan registrando-->
+          </article>
+        </article>
+      </section>
+
+      <aside id="columna">
+        <b>Datos de Tipo String </br>
+        UNICODE</b>
+      </aside>
+
+      <aside id="columna2">
+       <b>String</b> </br>
+        La clase String inlcuye metodos y propiedades para procesar string</br>
+        Un string es array de</br> caracteres, con un indice entre 0 y</br> 
+        numero_de_caracteres - 1. Cada</br> 
+        indice representa un caracter del </br>
+        string.<b>Método length devuelve</br> 
+        la longitud </b>, número de caracteres</br> 
+        contenidos en el string: </br>
+        "ciudad".length => 6</br>
+        <b>Utilizando el string como un</br>
+        array: "ciudad"[2] => "u"</b></br>
+        Devuelve el caracter del indice</br>
+        2 (comienza en 0)</br>
+        <b>Método: "ciudad".charCodeAt(2)</br>
+        => 117</b> Devuelve codigo</br>
+        UNICODE de tercer caracter</br>
+        <b>Método: "ciudad".indexOf("da")</br>
+        => 3</b> Devuelve posicion de</br>
+        substring</br>
+        <b>Método: "ciudad".substring(2,5)</br>
+        => "uda"</b> Devuelve substring</br>
+        entre ambos indices
+      </aside>
+      <footer id="pie">
+        Desarrollo de Aplicaciones Web(DAW) © CIFP Santa Catalina
+      </footer>
+    </div>
+  </body>
+</html>
